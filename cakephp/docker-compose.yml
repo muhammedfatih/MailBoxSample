@@ -11,9 +11,6 @@ services:
         - MYSQL_PASSWORD=myapp
     ports:
       - 8106:3306
-    volumes:
-      - ../mysql:/var/lib/mysql
-      - ./mysql/my.cnf:/etc/mysql/my.cnf
     networks:
       - myappnetwork
   cakephp:
